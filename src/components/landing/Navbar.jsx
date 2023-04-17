@@ -10,6 +10,7 @@ const Navbar = ({openAuth}) => {
 
     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul className="font-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        
         <li>
           <a href="#" className="block py-2 pl-3 pr-4 text-white bg-indigo-700 rounded md:bg-transparent md:text-indigo-700 md:p-0 dark:text-white md:dark:text-indigo-500" aria-current="page">For Job Seekers</a>
         </li>
@@ -25,6 +26,10 @@ const Navbar = ({openAuth}) => {
         </li>
       </ul>
     </div>
+
+
+    <button className="sm:block md:hidden py-2 px-4 border -mr-5 text-indigo-700 border-indigo-700 hover:bg-indigo-700 hover:text-white rounded" onClick={()=>openAuth(true)} >Log In / Sign Up</button>
+
   </div>
 </nav>
 
