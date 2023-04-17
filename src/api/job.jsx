@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const  fetchingJobs = async ()=> {
     const token = get_token()
-    const res = await axios.get(`${api_url}jobs`,{
+    const res = await axios.get(`${api_url}jobs/`,{
         headers: {
             'Authorization': `Token ${token}`
         }
@@ -13,7 +13,7 @@ export const  fetchingJobs = async ()=> {
 
 export const  fetchingCompanyJobs = async ()=> {
     const token = get_token()
-    const res = await axios.get(`${api_url}jobs`,{
+    const res = await axios.get(`${api_url}jobs/companyjobs`,{
         headers: {
             'Authorization': `Token ${token}`
         }
