@@ -147,7 +147,7 @@ const LandingPage = () => {
         </section>
 
 
-    <section className="max-w-screen-2xl mx-auto border-t " > 
+    <section className="max-w-screen-2xl mx-auto border-t p-3 " > 
 
         <div className="w-full pt-4  pb-10 mb-10">
 
