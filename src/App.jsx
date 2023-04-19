@@ -10,6 +10,8 @@ import Home from './pages/Home'
 import Job from './pages/Job'
 import Blog from './pages/Blog'
 import PrivateRoute from './components/universal/PrivateRoute'
+import AppliedJobs from './pages/Applied'
+import SavedJobs from './pages/SavedJobs'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +26,20 @@ function App() {
 
       <Route exact path='/job/:jobId' element={<PrivateRoute/>}>
       <Route path="/job/:jobId" element={<Job />} />
+      </Route>
+
+
+      <Route exact path='/boost' element={<PrivateRoute/>}>
+      <Route path='/boost' element={<Blog />} />
+      </Route>
+
+      <Route exact path='/applied' element={<PrivateRoute/>}>
+      <Route path='/applied' element={<AppliedJobs />} />
+      </Route>
+
+
+      <Route exact path='/saved' element={<PrivateRoute/>}>
+      <Route path='/saved' element={<SavedJobs />} />
       </Route>
 
 
