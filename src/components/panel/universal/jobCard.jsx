@@ -25,7 +25,23 @@ const JobCard = ({job}) => {
                 {job.company_details.company.name}
             </span>
 
+
+          
+
+
         </p>
+
+        {job.for_disabled && 
+            <div className="w-full flex items-end justify-end">
+                <button className="border border-indigo-700 rounded-full px-3 py-2" >
+                <span className="material-icons-outlined text-indigo-700">accessible</span>
+                </button>
+                
+            </div>
+                
+            }
+
+
 
         <p className="my-5 text-gray-500">
     {job.company_details.company.description}

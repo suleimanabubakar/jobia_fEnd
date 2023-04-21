@@ -55,6 +55,14 @@ const Job = () => {
             </span>
 
 
+            {job.for_disabled && 
+              <button className="border border-indigo-700 rounded-full px-3 py-2 ml-3" >
+              <span className="material-icons-outlined text-indigo-700">accessible</span>
+              </button>
+            }
+          
+                
+
                     </div>
 
                 </div>

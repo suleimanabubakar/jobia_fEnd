@@ -8,6 +8,7 @@ import { errorToast } from "../../universal/toastify";
 
 const PostJobModal = ({openModal,addingJob:addJob}) => {
 
+    const [isChecked, setIsChecked] = useState(false);
 
     const [requirements,setRequirements] = useState([{requirement:''}])
 
@@ -62,7 +63,7 @@ const PostJobModal = ({openModal,addingJob:addJob}) => {
             return errorToast('Empty Work Type')
         }
 
-        const finalJobObj = {...jobObj,requirements:requirements,tags:selectedSkills,work_type:jobType}
+        const finalJobObj = {...jobObj,requirements:requirements,tags:selectedSkills,work_type:jobType,for_disabled:isChecked}
         
         console.log('submitting')
 
@@ -162,6 +163,13 @@ Create A Job Post
     </div>
 
 </div>
+
+
+<div className="w-full flex justify-between px-6 my-4 pt-3">
+<p className="text-gray-600">Can Be Applied By a Disabled ? </p>
+<input type="checkbox" checked={isChecked} onChange={(e)=>setIsChecked(e.target.checked)} className="switch" />
+</div>
+
 
 
 <div className="text-gray-500 w-full text-sm   text-left leading-relaxed my-3 px-4 ">

@@ -129,10 +129,9 @@ const LandingPage = () => {
 
     <div className="text-gray-600 my-6">
 
-    <p className="my-3" >Get Employed from Anywhere in the World</p>
-    <p className="my-3" >Boost Your Career by earning more skills related  to your field</p>
-    <p className="my-3">People with Disabilities can also be Employed</p>
-    <p className="my-3">Earn tech skills relating to your field or interests </p>
+    <p className="my-3" >Responsive and startup-ready candidates, with all the information you need to vet them</p>
+    <p className="my-3" >Everything you need to kickstart your recruiting - get job posts, company branding, and HR tools set up within 10 minutes, for free</p>
+    <p className="my-3">Applications Can be customized to each Candidate</p>
     </div>
 
 

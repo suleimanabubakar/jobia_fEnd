@@ -12,6 +12,7 @@ import Blog from './pages/Blog'
 import PrivateRoute from './components/universal/PrivateRoute'
 import AppliedJobs from './pages/Applied'
 import SavedJobs from './pages/SavedJobs'
+import BlogPage from './pages/Blogpage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -45,6 +46,10 @@ function App() {
 
       <Route exact path='/onboarding' element={<PrivateRoute/>}>
       <Route path="/onboarding" element={<OnBoarding />} />
+      </Route>
+
+      <Route exact path='/blog' element={<PrivateRoute/>}>
+      <Route path="/blog" element={<BlogPage />} />
       </Route>
 
 
