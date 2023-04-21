@@ -11,9 +11,8 @@ const Blog = () => {
         <section className="max-w-screen-2xl mx-auto">
 
         <BlogSection />
-      
 
-</section>
+        </section>
 
 
         </>
