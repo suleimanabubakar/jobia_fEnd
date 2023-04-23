@@ -21,7 +21,7 @@ const BlogPage = () => {
         <SeekerNav />
 
 
-        <div className="w-full my-3 p-3 ">
+        <div className="w-full my-3 p-3  ">
 
 
         {
@@ -47,9 +47,9 @@ const BlogPage = () => {
 
 
 
-<div className="text-gray-500 py-4 text-sm">
+<p className="text-gray-500 py-4 leading-3.0 ">
                 {blog.description}
-</div>
+</p>
 
 
 

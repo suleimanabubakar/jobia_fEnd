@@ -2,6 +2,9 @@ import Navbar from "../components/landing/Navbar";
 import Unsearch from "../assets/images/searching_jobs.png"
 import HomeImage from '../assets/images/world.png'
 import Seeker from '../assets/images/seekers.png'
+import SaveImg from '../assets/images/saves.png'
+import SearchImg from '../assets/images/searching.png'
+import DisabledImg from '../assets/images/disabled.jpeg'
 import Recruiter from '../assets/images/recruiters.png'
 import AuthModal from "../components/auth/authModal";
 import { useState } from "react";
@@ -142,6 +145,79 @@ const LandingPage = () => {
   </div>
 
 </div>
+
+
+
+<div className="w-full flex flex-wrap items-center border-t">
+
+<div className="w-full lg:w-1/2 px-3">
+         <img src={SearchImg} alt="" className="w-[80%]"/>
+</div>
+
+<div className="w-full lg:w-1/2 px-10">
+  {/* <p className="text-black tFonts my-6">
+      Want a Talent ?
+  </p> */}
+
+
+  <p className="text-black tFonts text-3xl">
+     Why JobAi ?
+  </p>
+
+
+  <div className="text-gray-600 my-6">
+
+  <p className="my-3" >Easy access to job opportunities from multiple companies in one place.</p>
+  <p className="my-3" >Employer reviews provide valuable insight into company culture, work-life balance, salary, and benefits.</p>
+  <p className="my-3">Career resources such as resume templates and interview tips</p>
+  <p className="my-3">Increased visibility for job openings and attracting more qualified candidates</p>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div className="w-full flex flex-wrap items-center border-t">
+
+
+<div className="w-full lg:w-1/2 px-10 py-10">
+  {/* <p className="text-black tFonts my-6">
+      Want a Talent ?
+  </p> */}
+
+
+  <p className="text-black tFonts text-3xl">
+     What JobAi Has For The Disabled ?
+  </p>
+
+
+  <div className="text-gray-600 my-6">
+
+  <p className="my-3" >Positive social impact: JobAi can make a positive impact on society by helping to reduce discrimination and inequality in the workplace.</p>
+  <p className="my-3" >Contribute to reducing the unemployment rate among disabled individuals, which is often higher than the general population.</p>
+  <p className="my-3">Finding meaningful employment can have a positive impact on a person's mental health and overall well-being, and your app can help facilitate this</p>
+  <p className="my-3">We provide a user-friendly platform for disabled individuals to search for jobs that cater to their needs and abilities, such as remote work or flexible hours</p>
+  </div>
+
+
+</div>
+
+
+<div className="w-full lg:w-1/2 px-3 py-[70px]">
+         <img src={DisabledImg} alt="" className="w-[80%]"/>
+</div>
+
+
+
+</div>
+
+
+
         
         </section>
 
